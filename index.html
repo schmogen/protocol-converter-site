@@ -24,13 +24,31 @@
         <p class="disclaimer">⚠️ Review required—verify critical parameters</p>
      </div>
     </header>
-    <section id="try" class="try-section">
-  <div class="try-card">
-    <h2>Try it now (free)</h2>
-    <p class="try-subtitle">Upload a PDF protocol and we’ll convert it to an editable Word document.</p>
-    <!-- Form goes here (we’ll add/attach next) -->
-  </div>
-</section>
+    <section id="try">
+        <div class="container">
+            <h2>
+                <strong class="cta-button" style="display:inline-block;padding:8px 14px;">Try it now</strong>
+                <span class="subtitle" style="display:inline-block;margin-left:10px;vertical-align:middle;font-size:1rem;">(free)</span>
+            </h2>
+            <p class="subtitle">Upload a PDF protocol and we’ll convert it to an editable Word document.</p>
+
+            <form id="upload-form" action="#" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="protocol">Select PDF</label>
+                    <input id="protocol" type="file" name="protocol" accept="application/pdf" required>
+                </div>
+
+                <div style="margin-top:12px; display:flex; gap:12px; align-items:center;">
+                    <button class="cta-button" type="submit">Upload &amp; Convert</button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe46J1iCiiKBx1awshTEKNpTlA-yQ3Vn1-qSaq1RZQOQeSslg/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                        <button class="cta-button" type="button">Request a Demo</button>
+                    </a>
+                </div>
+
+                <p class="disclaimer" style="margin-top:10px;">Files are processed securely and removed after 24 hours.</p>
+            </form>
+        </div>
+    </section>
 
     <!-- How It Works Section -->
     <section class="how-it-works">
